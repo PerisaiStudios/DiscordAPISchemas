@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Discord Webhook POST",
+    "description": "Validate POST request to Discord Webhook.",
+    "properties": {
+        "avatar_url": {
+            "title": "Avatar URL",
+            "description": "The Webhook Client's Avatar URL.",
+            "type": "string",
+            "default": "https://"
+        },
+        "content": {
+            "title": "Content",
+            "description": "The Message To Be Sent.",
+            "type": "string"
+        },
+        "embeds": {
+            "title": "Embeds",
+            "description": "The Embeds To Be Sent.",
+            "type": "array"
+        },
+        "username": {
+            "title": "Username",
+            "description": "The Webhook Client's Username",
+            "type": "string"
+        }
+    },
+    "required": ["content"]
+}
